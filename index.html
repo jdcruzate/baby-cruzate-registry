@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"/&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"/&gt;</p>
+<p class="p1">&lt;title&gt;Baby Cruzate · Registry&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--blue:#7aaecc;--blue-light:#ddeef7;--blue-mid:#a8cfe0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--beige:#f5f0e8;--beige-mid:#e8dece;--beige-dark:#c9b99a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--brown:#8c7560;--brown-dark:#5c4a38;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gray:#9a9a9a;--gray-light:#f2f2f2;--gray-mid:#ddd;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--white:#fff;--text:#3a3228;--text-light:#7a6e65;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>*{box-sizing:border-box;margin:0;padding:0}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body{font-family:'Georgia',serif;background:var(--beige);color:var(--text)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>a{color:inherit;text-decoration:none}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav{background:var(--white);border-bottom:1px solid var(--gray-mid);position:sticky;top:0;z-index:100;padding:0 24px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-inner{max-width:960px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:54px;flex-wrap:wrap;gap:8px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-logo{font-size:1rem;font-weight:700;color:var(--brown-dark)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links{display:flex;gap:4px;flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links a{font-size:.75rem;color:var(--text-light);padding:5px 10px;border-radius:20px;transition:background .2s;font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links a:hover{background:var(--blue-light);color:var(--blue)}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero{background:linear-gradient(160deg,var(--blue-light) 0%,var(--beige) 60%,var(--beige-mid) 100%);padding:56px 24px 40px;text-align:center}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-eyebrow{font-family:'Segoe UI',sans-serif;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero h1{font-size:2.4rem;color:var(--brown-dark);font-weight:700;line-height:1.25;margin-bottom:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero h1 em{color:var(--blue);font-style:normal}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-divider{width:60px;height:2px;background:var(--beige-dark);margin:16px auto}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.note-title{font-size:.68rem;font-family:'Segoe UI',sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-story{max-width:620px;margin:0 auto 20px;text-align:left;display:flex;flex-direction:column;gap:12px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-story p{font-size:.92rem;color:var(--text-light);line-height:1.85}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-note{max-width:620px;margin:0 auto;font-size:.88rem;color:var(--text-light);line-height:1.8;background:var(--white);border-left:3px solid var(--blue-mid);border-radius:0 12px 12px 0;padding:18px 22px;text-align:left}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge{display:inline-flex;align-items:center;gap:5px;background:var(--white);border:1px solid var(--gray-mid);border-radius:20px;padding:5px 14px;font-size:.75rem;color:var(--text-light);font-family:'Segoe UI',sans-serif}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section{max-width:960px;margin:0 auto;padding:48px 24px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-header{display:flex;align-items:baseline;gap:14px;margin-bottom:28px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-header h2{font-size:1.3rem;color:var(--brown-dark);font-weight:700}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-header span{font-size:.75rem;font-family:'Segoe UI',sans-serif;color:var(--gray);letter-spacing:1px;text-transform:uppercase}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.divider{border:none;border-top:1px solid var(--gray-mid);margin:0 24px}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px #0001;transition:transform .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-card:hover{transform:translateY(-3px)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-thumb{width:100%;height:180px;object-fit:cover;background:linear-gradient(135deg,var(--blue-light),var(--beige-mid));display:flex;align-items:center;justify-content:center;font-size:3rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-info{padding:12px 14px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-info h4{font-size:.9rem;color:var(--brown-dark);margin-bottom:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-info p{font-size:.75rem;color:var(--gray);font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-add{border:2px dashed var(--gray-mid);border-radius:14px;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--gray);font-size:.82rem;font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gallery-add span{font-size:2rem}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.registry-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-card{background:var(--white);border-radius:16px;box-shadow:0 2px 12px #0001;overflow:hidden;transition:transform .2s;display:flex;flex-direction:column}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-card:hover{transform:translateY(-3px)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-card.is-claimed{opacity:.62}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-thumb-wrap{position:relative}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-thumb{width:100%;height:175px;object-fit:cover;background:linear-gradient(135deg,var(--blue-light),var(--beige-mid));display:flex;align-items:center;justify-content:center;font-size:3.5rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.claimed-ribbon{position:absolute;top:14px;right:-30px;background:#5a8a5a;color:#fff;font-size:.68rem;font-family:'Segoe UI',sans-serif;padding:4px 40px;transform:rotate(45deg);letter-spacing:1px;white-space:nowrap}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-body{padding:16px;flex:1;display:flex;flex-direction:column;gap:8px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-body h3{font-size:.92rem;color:var(--brown-dark);font-weight:700;line-height:1.4}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-color{font-size:.74rem;font-family:'Segoe UI',sans-serif;color:var(--text-light)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-meta{display:flex;justify-content:space-between;align-items:center}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-price{font-size:1rem;font-weight:700;color:var(--brown-dark)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.priority-badge{font-size:.68rem;font-family:'Segoe UI',sans-serif;padding:3px 10px;border-radius:12px;font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.p-must{background:#ddeef7;color:var(--blue)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.p-nice{background:#f0ebe3;color:var(--brown)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.item-actions{display:flex;gap:8px;margin-top:4px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-store{flex:1;background:var(--brown-dark);color:var(--white);border:none;border-radius:10px;padding:9px;font-size:.78rem;cursor:pointer;font-family:'Segoe UI',sans-serif;transition:background .2s;text-align:center}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-store:hover{background:var(--brown)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-claim{flex:1;border:1.5px solid var(--blue-mid);background:transparent;color:var(--blue);border-radius:10px;padding:9px;font-size:.78rem;cursor:pointer;font-family:'Segoe UI',sans-serif;font-weight:600;transition:all .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-claim:hover{background:var(--blue-light)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-claim.claimed{border-color:#5a8a5a;color:#5a8a5a}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.delivery-card{background:var(--white);border-radius:16px;padding:24px 28px;box-shadow:0 2px 12px #0001;border-left:3px solid var(--blue-mid);max-width:560px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.d-row{display:flex;gap:12px;margin-bottom:14px;align-items:flex-start}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.d-icon{font-size:1.2rem;margin-top:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.d-label{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray);font-family:'Segoe UI',sans-serif;margin-bottom:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.d-val{font-size:.92rem;color:var(--brown-dark);font-weight:600;font-family:'Segoe UI',sans-serif;line-height:1.5}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.delivery-note{font-size:.82rem;color:var(--text-light);font-family:'Segoe UI',sans-serif;margin-top:6px;line-height:1.6;font-style:italic}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-card{background:var(--white);border-radius:16px;box-shadow:0 2px 12px #0001;overflow:hidden}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-header{display:flex;align-items:center;gap:10px;padding:14px 18px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gcash-header{background:#0a67b2}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.gotyme-header{background:#1a5e34}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-name{font-size:1rem;font-weight:700;color:#fff;font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-body{padding:18px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.qr-box{text-align:center;margin-bottom:16px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.qr-img{width:180px;height:180px;border-radius:12px;border:1px solid var(--gray-mid);object-fit:contain}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.qr-note{font-size:.72rem;color:var(--gray);font-family:'Segoe UI',sans-serif;margin-top:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-details{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wallet-detail-row{display:flex;flex-direction:column;gap:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.detail-label{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray);font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.detail-value{font-size:.92rem;color:var(--brown-dark);font-weight:600;font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-copy{width:100%;background:var(--beige-mid);color:var(--brown-dark);border:none;border-radius:10px;padding:9px;font-size:.82rem;cursor:pointer;font-family:'Segoe UI',sans-serif;font-weight:600;transition:background .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-copy:hover{background:var(--beige-dark);color:var(--white)}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.messages-list{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-card{background:var(--white);border-radius:14px;padding:16px 20px;box-shadow:0 2px 10px #0001;border-left:3px solid var(--blue-mid)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-name{font-size:.85rem;font-weight:700;color:var(--brown-dark);margin-bottom:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-contact{font-size:.72rem;color:var(--gray);font-family:'Segoe UI',sans-serif;margin-bottom:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-text{font-size:.88rem;color:var(--text-light);line-height:1.6;font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-date{font-size:.7rem;color:var(--gray);margin-top:6px;font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-empty{color:var(--gray);font-size:.88rem;font-family:'Segoe UI',sans-serif;font-style:italic;padding:8px 0}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-form{background:var(--white);border-radius:16px;padding:24px;box-shadow:0 2px 12px #0001}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.msg-form h3{font-size:1rem;color:var(--brown-dark);margin-bottom:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.form-note{font-size:.78rem;color:var(--gray);font-family:'Segoe UI',sans-serif;margin-bottom:16px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.field{width:100%;border:1.5px solid var(--gray-mid);border-radius:10px;padding:10px 14px;font-size:.88rem;color:var(--text);margin-bottom:12px;outline:none;background:var(--beige);font-family:'Segoe UI',sans-serif;transition:border .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.field:focus{border-color:var(--blue-mid);background:var(--white)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>textarea.field{resize:vertical;min-height:80px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-send{background:var(--blue);color:var(--white);border:none;border-radius:10px;padding:11px 28px;font-size:.88rem;cursor:pointer;font-family:'Segoe UI',sans-serif;font-weight:600;transition:background .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-send:hover{background:var(--blue-mid)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-send:disabled{opacity:.5;cursor:not-allowed}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.overlay{display:none;position:fixed;inset:0;background:#0006;z-index:200;align-items:center;justify-content:center}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.overlay.open{display:flex}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.modal{background:var(--white);border-radius:20px;padding:28px;max-width:400px;width:92%}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.modal h3{font-size:1.05rem;color:var(--brown-dark);margin-bottom:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.modal p{font-size:.85rem;color:var(--text-light);margin-bottom:16px;font-family:'Segoe UI',sans-serif;line-height:1.5}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.modal-btns{display:flex;gap:12px;margin-top:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-ok{background:var(--brown-dark);color:var(--white);border:none;border-radius:10px;padding:10px 22px;cursor:pointer;font-family:'Segoe UI',sans-serif;font-weight:600;flex:1}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-no{background:var(--gray-light);color:var(--gray);border:none;border-radius:10px;padding:10px 22px;cursor:pointer;font-family:'Segoe UI',sans-serif;flex:1}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.contact-card{background:var(--white);border-radius:16px;padding:24px 28px;box-shadow:0 2px 12px #0001;border-left:3px solid var(--blue-mid);max-width:480px;display:flex;flex-direction:column;gap:18px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.contact-row{display:flex;gap:14px;align-items:flex-start}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.contact-icon{font-size:1.3rem;margin-top:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.contact-label{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray);font-family:'Segoe UI',sans-serif;margin-bottom:3px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.contact-val{font-size:.95rem;color:var(--blue);font-weight:600;font-family:'Segoe UI',sans-serif;text-decoration:none}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.contact-val:hover{text-decoration:underline}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ADMIN BADGE */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.admin-bar{display:none;background:#5c4a38;color:#fff;text-align:center;padding:8px;font-size:.8rem;font-family:'Segoe UI',sans-serif;letter-spacing:.5px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.admin-bar.show{display:block}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.admin-unclaim{font-size:.7rem;background:#c0392b;color:#fff;border:none;border-radius:8px;padding:3px 10px;cursor:pointer;font-family:'Segoe UI',sans-serif;margin-left:8px}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* CONFIRM INPUT */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.confirm-hint{font-size:.78rem;color:var(--blue);font-family:'Segoe UI',sans-serif;margin-bottom:8px;font-style:italic}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.toast.show{opacity:1}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.loading{text-align:center;padding:40px;color:var(--gray);font-family:'Segoe UI',sans-serif;font-size:.9rem}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>footer{background:var(--white);border-top:1px solid var(--gray-mid);text-align:center;padding:28px 16px;font-size:.78rem;color:var(--gray);font-family:'Segoe UI',sans-serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>footer strong{color:var(--brown-dark)}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media(max-width:500px){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero h1{font-size:1.8rem}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.registry-grid,.wallet-grid{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.form-row{grid-template-columns:1fr}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="nav-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="nav-logo"&gt;Baby Cruzate 💙&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#gallery"&gt;Gallery&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#registry"&gt;Registry&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#delivery"&gt;Delivery&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#send-gift"&gt;Send a Gift&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-eyebrow"&gt;A new chapter begins&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Welcome to the World,&lt;br&gt;&lt;em&gt;Baby Boy Cruzate&lt;/em&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-divider"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-story"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="note-title"&gt;Our Story&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Sixteen years. That's how long we waited, grew, and prepared — not just in practical ways, but in every way that truly matters. Sixteen years of building a life together, of learning who we are, of becoming the people we always hoped our child would look up to.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;For all of those sixteen years, we poured every ounce of our love into our firstborn, Seltiel Jaime. He has been our whole heart — our greatest joy, our proudest achievement, our reason to be better every single day. Loving only him, fully and completely, didn't shrink our hearts. It stretched them. It made them bigger, deeper, and more ready than we ever thought possible.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;And now, finally, we are ready to love again. A second baby boy — just as prayed for, just as dreamed about, and just as deeply wanted as his Kuya before him.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;This little one wasn't just planned. He was waited for, believed in, and worth every single moment. We believe that God's timing is always perfect, and this season is beautiful proof of that.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;We'd be so glad to have you join us in this journey — as we count down the days, prepare our hearts and home, and get ready to welcome our greatest new adventure. Thank you for being part of our story. 💙&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-note" style="margin-top:20px"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="note-title"&gt;About this registry&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>We won't be having a baby shower, but many friends and family have asked if we have a registry. We created this simply to keep track of the items we still need. Your love, prayers, and support mean the world to us — there is absolutely no expectation to purchase anything. Thank you for being part of this special chapter in our lives. 💙</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-badges"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="badge"&gt;👣 Baby Boy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="badge"&gt;📅 Due October 2026&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="badge"&gt;💙 16 Years in the Making&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="divider"/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section" id="gallery"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header"&gt;&lt;h2&gt;Our Gallery&lt;/h2&gt;&lt;span&gt;Growing with love&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="gallery-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="gallery-thumb"&gt;👶&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="gallery-info"&gt;&lt;h4&gt;First 3D Scan&lt;/h4&gt;&lt;p&gt;22 Weeks · Cure Health Clinic&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="gallery-thumb"&gt;🌟&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="gallery-info"&gt;&lt;h4&gt;Second View&lt;/h4&gt;&lt;p&gt;22 Weeks · Side profile&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery-add"&gt;&lt;span&gt;📷&lt;/span&gt;More photos coming soon…&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="gallery-add"&gt;&lt;span&gt;🍼&lt;/span&gt;After birth · Stay tuned&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="divider"/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section" id="registry"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header"&gt;&lt;h2&gt;Baby Registry&lt;/h2&gt;&lt;span&gt;Our living checklist&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="giftGrid" class="registry-grid"&gt;&lt;div class="loading"&gt;Loading registry… 💙&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="divider"/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section" id="delivery"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header"&gt;&lt;h2&gt;Delivery Details&lt;/h2&gt;&lt;span&gt;Where to send physical gifts&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="delivery-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="d-row"&gt;&lt;div class="d-icon"&gt;👤&lt;/div&gt;&lt;div&gt;&lt;div class="d-label"&gt;Recipient&lt;/div&gt;&lt;div class="d-val"&gt;Joiada Cruzate&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="d-row"&gt;&lt;div class="d-icon"&gt;📍&lt;/div&gt;&lt;div&gt;&lt;div class="d-label"&gt;Address&lt;/div&gt;&lt;div class="d-val"&gt;Cruzate Enterprises across Jollibee Tanza&lt;br&gt;397 A. Soriano Highway, Daang Amaya 1&lt;br&gt;Tanza, Cavite&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="d-row"&gt;&lt;div class="d-icon"&gt;📞&lt;/div&gt;&lt;div&gt;&lt;div class="d-label"&gt;Contact Number&lt;/div&gt;&lt;div class="d-val"&gt;0953 126 8358&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="delivery-note"&gt;💙 Please include your name with your package so we can personally thank you! If purchasing from Shopee, you may ship directly to this address.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="divider"/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section" id="send-gift"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header"&gt;&lt;h2&gt;Send a Gift&lt;/h2&gt;&lt;span&gt;Mobile wallet &amp; bank&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p style="font-size:.88rem;color:var(--text-light);font-family:'Segoe UI',sans-serif;margin-bottom:24px;max-width:560px;line-height:1.7;"&gt;Prefer to send a monetary gift? We've made it easy below. There is absolutely no pressure — your love and prayers are more than enough. 💙&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="wallet-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wallet-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wallet-header gcash-header"&gt;&lt;span style="font-size:1.3rem"&gt;💙&lt;/span&gt;&lt;span class="wallet-name"&gt;GCash&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wallet-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="qr-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img class="qr-img" src="https://drive.google.com/uc?export=view&amp;id=1PYPdPS_9zpTrbmuyxANTKs9hzI1GrXyF" alt="GCash QR"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="qr-note"&gt;📱 Open GCash → Scan QR&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="wallet-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="wallet-detail-row"&gt;&lt;span class="detail-label"&gt;Account Name&lt;/span&gt;&lt;span class="detail-value" id="gcash-name"&gt;Joiada C.&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="wallet-detail-row"&gt;&lt;span class="detail-label"&gt;Mobile Number&lt;/span&gt;&lt;span class="detail-value" id="gcash-number"&gt;0953 126 8358&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-copy" onclick="copyWallet('GCash','gcash-name','gcash-number')"&gt;Copy Details&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wallet-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wallet-header gotyme-header"&gt;&lt;span style="font-size:1.3rem"&gt;🟢&lt;/span&gt;&lt;span class="wallet-name"&gt;GoTyme Bank&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="wallet-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="qr-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img class="qr-img" src="https://drive.google.com/uc?export=view&amp;id=1V-3jOXXK9RH0V5ruhf-DHn9EcF9XuedC" alt="GoTyme QR"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="qr-note"&gt;📱 Open GoTyme → Scan QR&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="wallet-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="wallet-detail-row"&gt;&lt;span class="detail-label"&gt;Account Name&lt;/span&gt;&lt;span class="detail-value" id="gotyme-name"&gt;Joiada Cruzate&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="wallet-detail-row"&gt;&lt;span class="detail-label"&gt;Account Number&lt;/span&gt;&lt;span class="detail-value" id="gotyme-number"&gt;0110 1644 7887&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-copy" onclick="copyWallet('GoTyme','gotyme-name','gotyme-number')"&gt;Copy Details&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="divider"/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section" id="messages"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header"&gt;&lt;h2&gt;Messages&lt;/h2&gt;&lt;span&gt;Wishes &amp; love notes&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="messages-list" id="msgList"&gt;&lt;div class="loading"&gt;Loading messages… 💙&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="msg-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Leave a message for Baby Cruzate&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="form-note"&gt;We'd love to know who you are so we can thank you personally! 💙&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="form-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input class="field" id="msgName" type="text" placeholder="Your name or nickname *" maxlength="60"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input class="field" id="msgContact" type="tel" placeholder="Contact number *" maxlength="20"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea class="field" id="msgText" placeholder="Write a sweet note, wish, or prayer…" maxlength="400"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="btn-send" id="sendBtn" onclick="sendMsg()"&gt;Send Message 💙&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;Made with love for &lt;strong&gt;Baby Cruzate&lt;/strong&gt; &amp;nbsp;·&amp;nbsp; Share this link only with those who ask 💙&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CONTACT --&gt;</p>
+<p class="p1">&lt;hr class="divider"/&gt;</p>
+<p class="p1">&lt;div class="section" id="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-header"&gt;&lt;h2&gt;Got Questions?&lt;/h2&gt;&lt;span&gt;We're happy to help&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="contact-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="contact-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="contact-icon"&gt;💬&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="contact-label"&gt;Facebook Messenger&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="contact-val" href="https://m.me/jdcaneza" target="_blank"&gt;JD Cruzate · @jdcaneza&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="contact-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="contact-icon"&gt;📱&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="contact-label"&gt;iMessage · Viber · WhatsApp · Telegram · SMS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="contact-val" href="tel:+639531268358"&gt;0953 126 8358&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="admin-bar" id="adminBar"&gt;🔐 Admin Mode Active — You can unclaim any item&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CLAIM MODAL --&gt;</p>
+<p class="p1">&lt;div class="overlay" id="modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3 id="modalTitle"&gt;Mark as Purchased?&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p id="modalBody"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="modalFields"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input class="field" id="claimName" type="text" placeholder="Your name or nickname *" maxlength="60"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input class="field" id="claimContact" type="tel" placeholder="Your contact number *" maxlength="20"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea class="field" id="claimMsg" placeholder="Leave a message (optional) 💙" maxlength="300" style="min-height:70px"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="confirm-hint"&gt;To confirm, type &lt;strong id="confirmWord"&gt;&lt;/strong&gt; below:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input class="field" id="claimConfirm" type="text" placeholder="Type to confirm…" maxlength="40"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="unclaimFields" style="display:none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input class="field" id="unclaimContact" type="tel" placeholder="Your contact number to verify *" maxlength="20"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-btns"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-ok" id="modalOk" onclick="confirmClaim()"&gt;Yes, I got it!&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-no" onclick="closeModal()"&gt;Cancel&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="toast" id="toast"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Firebase --&gt;</p>
+<p class="p1">&lt;script type="module"&gt;</p>
+<p class="p1">import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";</p>
+<p class="p1">import { getFirestore, collection, doc, setDoc, deleteDoc, onSnapshot, addDoc, serverTimestamp, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";</p>
+<p class="p2"><br></p>
+<p class="p1">// ============================================================</p>
+<p class="p1">// 🔧 PASTE YOUR FIREBASE CONFIG HERE</p>
+<p class="p1">// ============================================================</p>
+<p class="p1">const firebaseConfig = {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>apiKey: "AIzaSyBb6go7yvP5elDxs1CNbibekjw7nEEFCOQ",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>authDomain: "baby-cruzate-registry.firebaseapp.com",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>projectId: "baby-cruzate-registry",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>storageBucket: "baby-cruzate-registry.firebasestorage.app",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>messagingSenderId: "76731983307",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>appId: "1:76731983307:web:80b4431035785b9079c24e",</p>
+<p class="p1"><span class="Apple-converted-space">  </span>measurementId: "G-1EKX4NG9FB"</p>
+<p class="p1">};</p>
+<p class="p1">// ============================================================</p>
+<p class="p2"><br></p>
+<p class="p1">const app = initializeApp(firebaseConfig);</p>
+<p class="p1">const db = getFirestore(app);</p>
+<p class="p2"><br></p>
+<p class="p1">function driveImg(id){return`https://drive.google.com/uc?export=view&amp;id=${id}`;}</p>
+<p class="p2"><br></p>
+<p class="p1">const gifts=[</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"1",name:"Baby 1st Sierra Lightweight One Hand Foldable Stroller",color:"Black",price:"₱2,599",qty:1,priority:"must",link:"https://s.shopee.ph/2VpfWKA1gW",imgId:"1Xv5uwQW4hkaxYeUn-ga9qmZFvTJjMDzj"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"2",name:"Luna Baby Car Seat (With ICC Certificate)",color:"Grey",price:"₱2,999",qty:1,priority:"must",link:"https://s.shopee.ph/4LHJhm2GSe",imgId:"1nbLZmm5raokwt7DLKhnRLbZ-nWRCCDBF"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"3",name:"Orashare OCF01Pro Stroller Fan 4000mAh Rechargeable",color:"Rock White",price:"₱719",qty:1,priority:"must",link:"https://s.shopee.ph/40eTJEVCfg",imgId:"1_ac4iXlLGA3VspD6n31_066TTMcslBDR"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"4",name:"Crib for Baby Cradle With Mosquito Net Adjustable Foldable",color:"Dark Grey (Wood Grain)",price:"₱3,779",qty:1,priority:"nice",link:"https://s.shopee.ph/qhRXRmhrm",imgId:"1tC4M6KnN-isuIcyaaKUiIDVX0nbHNoJZ"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"5",name:"Baby Stroller Liner Pad Seat Cover — Gray Cross",color:"Gray Cross",price:"₱380",qty:1,priority:"must",link:"https://s.shopee.ph/3ViCiPUc9U",imgId:"1_I71oZ5kC_LKcXqaFDwwWfae9EZQWL0o"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"6",name:"Baby Stroller Liner Pad Seat Cover — Grey Star",color:"Grey Star",price:"₱380",qty:1,priority:"must",link:"https://s.shopee.ph/3ViCiPUc9U",imgId:"1r6pijhE6GEIbIL4MG4yTNjxixPz7Qo4D"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"7",name:"Starter Set Newborn Baby Clothes w/ Pillows Set",color:"White Starter",price:"₱470",qty:1,priority:"must",link:"https://s.shopee.ph/5VTIFUMw3E",imgId:"1tP8KFgqrFA1dGqysVhGD2rQS5d_ic8Js"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"8",name:"Moose Gear Baby Premium Pure Water Wipes 600s (6 Packs)",color:"",price:"₱541 × 2",qty:2,priority:"must",link:"https://s.shopee.ph/2qSX6bKxBw",imgId:"17bgAcI3CVlJ9SNG46m8_RDb_NREqd3ME"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"9",name:"Moose Gear Baby Tape Diaper Newborn 60pcs (2 Packs)",color:"",price:"₱506 × 2",qty:2,priority:"must",link:"https://s.shopee.ph/8KnTf2DSDo",imgId:"1m6iqPsmAYhyyY8Gb2uVDaoWCR7IF7NPk"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"10",name:"8pcs Newborn Set — Blanket, Mittens, Booties, Bonnet, Shortsleeve, Pajama",color:"Gray Safari",price:"₱344",qty:1,priority:"nice",link:"https://s.shopee.ph/9UzR3SCJth",imgId:"1aCz79j88V1gVRsXk8zGHxMcE3o3IieHJ"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"11",name:"8pcs Newborn Set — Blanket, Mittens, Booties, Bonnet, Shortsleeve, Pajama",color:"Navy Rocket",price:"₱344",qty:1,priority:"nice",link:"https://s.shopee.ph/9UzR3SCJth",imgId:"1tJIHnS_kIYYcoNnsbM3m64DQlP-9ydIl"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"12",name:"Baby Swaddle Wrap + Infant Sleeping Sack 100% Cotton Anti-Rash",color:"Starmoon",price:"₱169",qty:1,priority:"nice",link:"https://s.shopee.ph/6pyftazaGG",imgId:"1IvOjAbjlfNTQPyMP7jc8pM_sKK1d_Nkt"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"13",name:"Baby Swaddle Wrap + Infant Sleeping Sack 100% Cotton Anti-Rash",color:"Blue",price:"₱169",qty:1,priority:"nice",link:"https://s.shopee.ph/6pyftazaGG",imgId:"1g5Xshj_CBVXtMUJ6b30zzYQdXOJ3fK2h"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{id:"14",name:"Momcozy Breast Pump S12 Pro Hands-Free Wearable &amp; Wireless",color:"White, Single",price:"₱3,847",qty:1,priority:"must",link:"https://s.shopee.ph/AAF7s0yFkv",imgId:"1j6xXvxtU7zQny8cswufBMP11MLOshE67"},</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">const pLabel={must:"Must Have",nice:"Nice to Have"};</p>
+<p class="p1">const pClass={must:"p-must",nice:"p-nice"};</p>
+<p class="p1">let claimed={};</p>
+<p class="p1">let pending=null;</p>
+<p class="p2"><br></p>
+<p class="p1">// Real-time listener for claims</p>
+<p class="p1">onSnapshot(collection(db,"claims"), snap=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>claimed={};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>snap.forEach(d=&gt;claimed[d.id]=d.data());</p>
+<p class="p1"><span class="Apple-converted-space">  </span>renderGifts();</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">// Real-time listener for messages</p>
+<p class="p1">const msgsQ=query(collection(db,"messages"),orderBy("createdAt","desc"));</p>
+<p class="p1">onSnapshot(msgsQ, snap=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const el=document.getElementById('msgList');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(snap.empty){el.innerHTML='&lt;p class="msg-empty"&gt;No messages yet — be the first to leave one. 💙&lt;/p&gt;';return;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>el.innerHTML=snap.docs.map(d=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const m=d.data();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const date=m.createdAt?.toDate().toLocaleDateString('en-PH',{year:'numeric',month:'long',day:'numeric'})||'';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>return`&lt;div class="msg-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="msg-name"&gt;${m.name}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="msg-contact"&gt;${m.contact}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="msg-text"&gt;${m.text}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="msg-date"&gt;${date}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}).join('');</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">function renderGifts(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('giftGrid').innerHTML=gifts.map(g=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const c=claimed[g.id];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>return`&lt;div class="item-card${c?' is-claimed':''}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="item-thumb-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img class="item-thumb" src="${driveImg(g.imgId)}" alt="${g.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item-thumb" style="display:none"&gt;🛍️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>${c?'&lt;div class="claimed-ribbon"&gt;Claimed ✓&lt;/div&gt;':''}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="item-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;${g.name}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>${g.color?`&lt;p class="item-color"&gt;🎨 ${g.color} · Qty: ${g.qty}&lt;/p&gt;`:`&lt;p class="item-color"&gt;Qty: ${g.qty}&lt;/p&gt;`}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item-meta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="item-price"&gt;${g.price}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="priority-badge ${pClass[g.priority]}"&gt;${pLabel[g.priority]}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn-store" href="${g.link}" target="_blank"&gt;🛒 Shopee&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-claim${c?' claimed':''}" onclick="openModal('${g.id}','${g.name.replace(/'/g,"\\'").replace(/"/g,'&amp;quot;')}')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>${c?'✓ Claimed':'I got this!'}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}).join('');</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">window.openModal=function(id,name){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pending={id,name,unclaim:!!claimed[id]};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modalTitle').textContent=pending.unclaim?'Remove Claim?':'Mark as Purchased?';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modalBody').textContent=pending.unclaim</p>
+<p class="p1"><span class="Apple-converted-space">    </span>?`Remove the claim on "${name}"?`</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:`Please share your details so the family can thank you! 💙`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modalFields').style.display=pending.unclaim?'none':'block';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modalOk').textContent=pending.unclaim?'Yes, remove':'Yes, I got it!';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('claimName').value='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('claimContact').value='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('claimMsg').value='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modal').classList.add('open');</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">window.closeModal=function(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modal').classList.remove('open');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>pending=null;</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">window.confirmClaim=async function(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(!pending)return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(pending.unclaim){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>await deleteDoc(doc(db,"claims",pending.id));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>showToast("Claim removed.");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const name=document.getElementById('claimName').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const contact=document.getElementById('claimContact').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const msg=document.getElementById('claimMsg').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(!name||!contact){showToast("Please enter your name and contact number 💙");return;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>await setDoc(doc(db,"claims",pending.id),{name,contact,msg,itemId:pending.id,createdAt:serverTimestamp()});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>showToast("Thank you! Item marked as claimed 💙");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>closeModal();</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">window.sendMsg=async function(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const name=document.getElementById('msgName').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const contact=document.getElementById('msgContact').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const text=document.getElementById('msgText').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(!name||!contact||!text){showToast("Please fill in all required fields 💙");return;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const btn=document.getElementById('sendBtn');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>btn.disabled=true;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>await addDoc(collection(db,"messages"),{name,contact,text,createdAt:serverTimestamp()});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('msgName').value='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('msgContact').value='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('msgText').value='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>btn.disabled=false;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>showToast("Message sent! Thank you 💙");</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">window.copyWallet=function(wallet,nameId,numId){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const name=document.getElementById(nameId).textContent;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const num=document.getElementById(numId).textContent;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>navigator.clipboard.writeText(`${wallet}\nAccount Name: ${name}\nNumber: ${num}`)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.then(()=&gt;showToast(`${wallet} details copied! 💙`))</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.catch(()=&gt;showToast('Please copy the details manually.'));</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">function showToast(msg){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const t=document.getElementById('toast');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>t.textContent=msg;t.classList.add('show');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;t.classList.remove('show'),3000);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">document.getElementById('modal').addEventListener('click',e=&gt;{if(e.target===document.getElementById('modal'))closeModal();});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
