@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -98,8 +99,8 @@
   <div class="login-card">
     <h1>🔐 Admin Dashboard</h1>
     <p>Baby Cruzate Registry · Restricted Access</p>
-    <input type="password" id="passInput" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')doLogin()"/>
-    <button class="btn-login" onclick="doLogin()">Sign In</button>
+    <input type="password" id="passInput" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')document.getElementById('loginBtn').click()"/>
+    <button class="btn-login" id="loginBtn">Sign In</button>
     <div class="login-err" id="loginErr">Incorrect password. Try again.</div>
   </div>
 </div>
@@ -181,7 +182,7 @@ const firebaseConfig = {
   appId: "1:76731983307:web:80b4431035785b9079c24e"
 };
 
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig, 'admin');
 const db = getFirestore(app);
 
 const gifts=[
@@ -202,6 +203,10 @@ const gifts=[
 ];
 
 let claimed={}, messages=[], currentTab='registry';
+
+// Wire up buttons after module loads
+document.getElementById('loginBtn').addEventListener('click', doLogin);
+document.querySelector('.btn-logout').addEventListener('click', doLogout);
 
 // Auth
 window.doLogin=function(){
